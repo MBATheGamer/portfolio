@@ -8,7 +8,7 @@
   </head>
 
   <body class="vh-100 d-flex flex-column">
-    <nav class="sticky-top w-100 navbar navbar-expand-md bg-body-tertiary">
+    <nav class="sticky-top navbar navbar-expand-md bg-body-tertiary mb-4">
       <div class="container">
         <a href="./" class="navbar-brand">Portfolio</a>
         <button
@@ -22,270 +22,390 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a href="./" class="nav-link" aria-current="page">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="./projects" class="nav-link active" aria-current="page">
-                Projects
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="./showreels" class="nav-link" aria-current="page">
-                Showreels
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="./experiences" class="nav-link" aria-current="page">
-                Experiences
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="./education" class="nav-link" aria-current="page">
-                Education
-              </a>
-            </li>
-          </ul>
-          <a href="./" class="btn btn-primary">Logout</a>
-        </div>
+        <ul class="collapse navbar-collapse navbar-nav" id="navbar-collapse">
+          <li class="nav-item">
+            <a href="./" class="nav-link" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./projects" class="nav-link active" aria-current="page">
+              Projects
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./showreels" class="nav-link" aria-current="page">
+              Showreels
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./experiences" class="nav-link" aria-current="page">
+              Experiences
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./education" class="nav-link" aria-current="page">
+              Education
+            </a>
+          </li>
+        </ul>
       </div>
     </nav>
 
-    <main
-      class="container flex-fill align-content-md-center pt-5 pt-lg-0 w-100 mx-auto px-2"
-    >
-      <div class="container">
-        <section class="row pb-4">
-          <h1 class="col-12 text-center mb-5 pt-5 pt-lg-0">Projects</h1>
-          <div class="input-group">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Project name"
-              aria-label="Project name"
-              aria-describedby="search"
+    <main class="container flex-fill w-100 px-2">
+      <section class="row">
+        <h1 class="col-12 text-center mb-4">Projects</h1>
+        <div class="input-group mb-4">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Project name"
+            aria-label="Project name"
+            aria-describedby="search"
+          />
+          <button type="button" class="input-group-text" id="search">
+            Search
+          </button>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card">
+            <img width="60px" src="./static/img/go.svg" alt="project" />
+            <div class="card-body">
+              <div class="row">
+                <div class="col-9">
+                  <h5 class="card-title" style="height: 48px">
+                    Programming Language
+                  </h5>
+                  <h6 class="card-subtitle text-secondary">9 months</h6>
+                </div>
+                <button
+                  type="button"
+                  class="col-3 btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#programmingLanguageModal"
+                >
+                  <img src="./static/img/github.svg" alt="github" />
+                </button>
+              </div>
+              <hr />
+              <p class="card-text" style="min-height: 150px">
+                I create my own programming language to solve a problem, I was
+                faces with many languages in game development, so I created this
+                language using Go.
+              </p>
+              <div class="row justify-content-between mx-0">
+                <button
+                  class="btn btn-outline-secondary col-5"
+                  style="font-size: 0.7rem"
+                  disabled
+                >
+                  January 2024
+                </button>
+                <button
+                  class="btn btn-outline-secondary col-5"
+                  style="font-size: 0.7rem"
+                  disabled
+                >
+                  October 2024
+                </button>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-3">
+                  <div class="card">
+                    <img
+                      class="mx-auto"
+                      src="./static/img/go.svg"
+                      alt="languages"
+                      width="40px"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card">
+            <img width="60px" src="./static/img/react.svg" alt="project" />
+            <div class="card-body">
+              <div class="row">
+                <div class="col-9">
+                  <h5 class="card-title" style="height: 48px">Game Hub</h5>
+                  <h6 class="card-subtitle text-secondary">2 months</h6>
+                </div>
+                <button
+                  type="button"
+                  class="col-3 btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#gamehubModal"
+                >
+                  <img src="./static/img/github.svg" alt="github" />
+                </button>
+              </div>
+              <hr />
+              <p class="card-text" style="min-height: 150px">
+                I create a game hub application that uses React library for
+                frontend. Game hub is an application to fetch games and render
+                it as list of games with their scores, description and reviews
+                depend on <span class="fw-bold">RAWG</span> API.
+              </p>
+              <div class="row justify-content-between mx-0">
+                <button
+                  class="btn btn-outline-secondary col-5"
+                  style="font-size: 0.7rem"
+                  disabled
+                >
+                  April 2024
+                </button>
+                <button
+                  class="btn btn-outline-secondary col-5"
+                  style="font-size: 0.7rem"
+                  disabled
+                >
+                  May 2024
+                </button>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-3">
+                  <div class="card">
+                    <img
+                      class="mx-auto"
+                      src="./static/img/html.svg"
+                      alt="languages"
+                      width="40px"
+                    />
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="card">
+                    <img
+                      class="mx-auto"
+                      src="./static/img/css.svg"
+                      alt="languages"
+                      width="40px"
+                    />
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="card">
+                    <img
+                      class="mx-auto"
+                      src="./static/img/typescript.svg"
+                      alt="languages"
+                      width="40px"
+                    />
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="card">
+                    <img
+                      class="mx-auto"
+                      src="./static/img/react.svg"
+                      alt="languages"
+                      width="40px"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card">
+            <img
+              class="ms-2 mt-2"
+              width="50px"
+              src="./static/img/rust.svg"
+              alt="project"
             />
-            <button type="button" class="input-group-text" id="search">
-              Search
+            <div class="card-body">
+              <div class="row">
+                <div class="col-9">
+                  <h5 class="card-title" style="height: 48px">Raylib Rust</h5>
+                  <h6 class="card-subtitle text-secondary">2 months</h6>
+                </div>
+                <button
+                  type="button"
+                  class="col-3 btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#raylibRustModal"
+                >
+                  <img src="./static/img/github.svg" alt="github" />
+                </button>
+              </div>
+              <hr />
+              <p class="card-text" style="min-height: 150px">
+                I re-write Raylib for Rust because I use Rust for daily basis.
+                With all examples of Raylib examples also re-written in Rust.
+              </p>
+              <div class="row justify-content-between mx-0">
+                <button
+                  class="btn btn-outline-secondary col-5"
+                  style="font-size: 0.7rem"
+                  disabled
+                >
+                  October 2025
+                </button>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-3">
+                  <div class="card">
+                    <img
+                      class="mx-auto"
+                      src="./static/img/rust.svg"
+                      alt="languages"
+                      width="40px"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <dialog
+      id="programmingLanguageModal"
+      class="modal fade bg-transparent border-0 justify-content-center align-content-center"
+      tabindex="-1"
+      aria-hidden="true"
+      aria-labelledby="programmingLanguageModalLabel"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="programmingLanguageModalLabel">
+              Do you want to visit our Programming Language repository?
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              By clicking on <strong>visit</strong> button, you browser will
+              open new tab, that have our Programming Language repository.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <a
+              href="https://github.com/MBATheGamer/lang_core"
+              target="_blank"
+              class="btn btn-primary"
+            >
+              Visit
+            </a>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
             </button>
           </div>
-
-          <div class="mt-4 col-lg-4 col-md-6 col-sm-12">
-            <div class="card">
-              <img
-                class="ms-3 mt-2"
-                width="60px"
-                src="./static/img/go.svg"
-                alt="project"
-              />
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-9">
-                    <h5 class="card-title col-9" style="height: 48px">
-                      Programming Language
-                    </h5>
-                    <h6 class="card-subtitle text-secondary col-9">9 months</h6>
-                  </div>
-                  <a
-                    class="col-3"
-                    href="https://github.com/MBATheGamer/lang_core"
-                    target="_blank"
-                  >
-                    <img src="./static/img/github.svg" alt="github" />
-                  </a>
-                </div>
-                <hr />
-                <p class="card-text mt-3" style="height: 140px">
-                  I create my own programming language to solve a problem, I was
-                  faces with many languages in game development, so I created
-                  this language using Go.
-                </p>
-                <div class="row justify-content-between mx-0">
-                  <button
-                    class="btn btn-outline-secondary col-4"
-                    style="font-size: 0.7rem"
-                    disabled
-                  >
-                    January 2024
-                  </button>
-                  <button
-                    class="btn btn-outline-secondary col-4"
-                    style="font-size: 0.7rem"
-                    disabled
-                  >
-                    October 2024
-                  </button>
-                </div>
-                <hr />
-                <div class="row">
-                  <div class="col-3">
-                    <div class="card">
-                      <img
-                        class="mx-auto"
-                        src="./static/img/go.svg"
-                        alt="languages"
-                        width="40px"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-4 col-lg-4 col-md-6 col-sm-12">
-            <div class="card">
-              <img
-                class="ms-3 mt-2"
-                width="60px"
-                src="./static/img/react.svg"
-                alt="project"
-              />
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-9">
-                    <h5 class="card-title col-9" style="height: 48px">
-                      Game Hub
-                    </h5>
-                    <h6 class="card-subtitle text-secondary col-9">2 months</h6>
-                  </div>
-                  <a
-                    class="col-3"
-                    href="https://github.com/MBATheGamer/game-hub"
-                    target="_blank"
-                  >
-                    <img src="./static/img/github.svg" alt="github" />
-                  </a>
-                </div>
-                <hr />
-                <p class="card-text mt-3" style="height: 140px">
-                  I create a game hub application that uses React library for
-                  frontend. Game hub is an application to fetch games and render
-                  it as list of games with their scores, description and reviews
-                  depend on <span class="fw-bold">RAWG</span> API.
-                </p>
-                <div class="row justify-content-between mx-0">
-                  <button
-                    class="btn btn-outline-secondary col-4"
-                    style="font-size: 0.7rem"
-                    disabled
-                  >
-                    April 2024
-                  </button>
-                  <button
-                    class="btn btn-outline-secondary col-4"
-                    style="font-size: 0.7rem"
-                    disabled
-                  >
-                    May 2024
-                  </button>
-                </div>
-                <hr />
-                <div class="row">
-                  <div class="col-3">
-                    <div class="card">
-                      <img
-                        class="mx-auto"
-                        src="./static/img/html.svg"
-                        alt="languages"
-                        width="40px"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="card">
-                      <img
-                        class="mx-auto"
-                        src="./static/img/css.svg"
-                        alt="languages"
-                        width="40px"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="card">
-                      <img
-                        class="mx-auto"
-                        src="./static/img/typescript.svg"
-                        alt="languages"
-                        width="40px"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="card">
-                      <img
-                        class="mx-auto"
-                        src="./static/img/react.svg"
-                        alt="languages"
-                        width="40px"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-4 col-lg-4 col-md-6 col-sm-12">
-            <div class="card">
-              <img
-                class="ms-3 mt-2"
-                width="60px"
-                src="./static/img/rust.svg"
-                alt="project"
-              />
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-9">
-                    <h5 class="card-title col-9" style="height: 48px">
-                      Raylib Rust
-                    </h5>
-                    <h6 class="card-subtitle text-secondary col-9">2 months</h6>
-                  </div>
-                  <a
-                    class="col-3"
-                    href="https://github.com/MBATheGamer/raylib-ffi"
-                    target="_blank"
-                  >
-                    <img src="./static/img/github.svg" alt="github" />
-                  </a>
-                </div>
-                <hr />
-                <p class="card-text mt-3" style="height: 140px">
-                  I re-write Raylib for Rust because I use Rust for daily basis.
-                  With all examples of Raylib examples also re-written in Rust.
-                </p>
-                <div class="row justify-content-between mx-0">
-                  <button
-                    class="btn btn-outline-secondary col-4"
-                    style="font-size: 0.7rem"
-                    disabled
-                  >
-                    October 2025
-                  </button>
-                </div>
-                <hr />
-                <div class="row">
-                  <div class="col-3">
-                    <div class="card">
-                      <img
-                        class="mx-auto"
-                        src="./static/img/rust.svg"
-                        alt="languages"
-                        width="40px"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        </div>
       </div>
-    </main>
+    </dialog>
+
+    <dialog
+      id="gamehubModal"
+      class="modal fade bg-transparent border-0 justify-content-center align-content-center"
+      tabindex="-1"
+      aria-hidden="true"
+      aria-labelledby="gamehubModalLabel"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="gamehubModalLabel">
+              Do you want to visit our Game Hub repository?
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              By clicking on <strong>visit</strong> button, you browser will
+              open new tab, that have our Game Hub repository.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <a
+              href="https://github.com/MBATheGamer/game-hub"
+              target="_blank"
+              class="btn btn-primary"
+            >
+              Visit
+            </a>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog
+      id="raylibRustModal"
+      class="modal fade bg-transparent border-0 justify-content-center align-content-center"
+      tabindex="-1"
+      aria-hidden="true"
+      aria-labelledby="raylibRustModalLabel"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="raylibRustModalLabel">
+              Do you want to visit our Raylib Rust repository?
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              By clicking on <strong>visit</strong> button, you browser will
+              open new tab, that have our Raylib Rust repository.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <a
+              href="https://github.com/MBATheGamer/raylib-ffi"
+              target="_blank"
+              class="btn btn-primary"
+            >
+              Visit
+            </a>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </dialog>
 
     <script src="./static/js/bootstrap.min.js"></script>
   </body>
