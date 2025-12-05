@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./static/css/bootstrap.min.css" />
   </head>
   <body class="vh-100 d-flex flex-column">
-    <nav class="sticky-top w-100 navbar navbar-expand-md bg-body-tertiary">
+    <nav class="sticky-top navbar navbar-expand-md bg-body-tertiary mb-4">
       <div class="container">
         <a href="./" class="navbar-brand">Portfolio</a>
         <button
@@ -21,44 +21,402 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a href="./" class="nav-link" aria-current="page">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="./projects" class="nav-link" aria-current="page">
-                Projects
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="./showreels" class="nav-link" aria-current="page">
-                Showreels
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                href="./experiences"
-                class="nav-link active"
-                aria-current="page"
-              >
-                Experiences
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="./education" class="nav-link" aria-current="page">
-                Education
-              </a>
-            </li>
-          </ul>
-          <a href="./" class="btn btn-primary">Logout</a>
-        </div>
+        <ul class="collapse navbar-collapse navbar-nav" id="navbar-collapse">
+          <li class="nav-item">
+            <a href="./" class="nav-link" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./projects" class="nav-link" aria-current="page">
+              Projects
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./showreels" class="nav-link" aria-current="page">
+              Showreels
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./experiences" class="nav-link active" aria-current="page">
+              Experiences
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./education" class="nav-link" aria-current="page">
+              Education
+            </a>
+          </li>
+        </ul>
       </div>
     </nav>
 
-    <main
-      class="container w-100 flex-fill align-content-center mx-auto px-2"
-    ></main>
+    <main class="container flex-fill">
+      <h1 class="text-center mb-4">Experiences</h1>
+      <section class="card mb-4">
+        <div class="row g-0">
+          <div class="col-md-1">
+            <img
+              src="https://riadhadrani.github.io/slick-portfolio-svelte-5/logos/no-img.svg"
+              alt="company-logo"
+              class="col-12 col-md-10 ms-md-3 mt-md-4 img-fluid rounded"
+            />
+          </div>
+          <div class="col-md-11">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-12">
+                  <div class="card-title d-flex justify-content-between">
+                    <div>
+                      <h5>Open Source Developer</h5>
+                      <span class="badge text-bg-secondary">Remote</span>
+                      <span class="badge text-bg-secondary">Full-Stack</span>
+                    </div>
+                    <h6 class="pt-2 card-subtitle text-secondary">16 months</h6>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="card-text" style="min-height: 150px">
+                <h6>I'm working on many products:</h6>
+                <ul>
+                  <li>
+                    <strong class="text-decoration-underline">
+                      My Own Programming Language:
+                    </strong>
+                    I create my own programming language to solve a problem. I
+                    was faced with many languages in game development, so I
+                    created this language using Go.
+                  </li>
+                  <li>
+                    <strong class="text-decoration-underline">
+                      Raylib Rust:
+                    </strong>
+                    re-implement Raylib to Rust programming language
+                  </li>
+                </ul>
+              </div>
+              <div class="row justify-content-between mx-0">
+                <button
+                  class="btn btn-outline-secondary col-5 col-md-4 col-lg-3"
+                  style="font-size: 0.7rem"
+                  disabled
+                >
+                  September 2024
+                </button>
+              </div>
+              <hr />
+              <div class="row flex-row-reverse g-1 g-md-2">
+                <div class="col-3 col-md-2 col-lg-1">
+                  <div class="card">
+                    <img
+                      class="mx-auto"
+                      src="./static/img/rust.svg"
+                      alt="languages"
+                      width="40px"
+                    />
+                  </div>
+                </div>
+                <div class="col-3 col-md-2 col-lg-1">
+                  <div class="card">
+                    <img
+                      class="mx-auto"
+                      src="./static/img/go.svg"
+                      alt="languages"
+                      width="40px"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card mb-4">
+        <div class="row g-0">
+          <div class="col-md-1">
+            <img
+              src="https://avatars.githubusercontent.com/u/88089122?s=200&v=4"
+              alt="company-logo"
+              class="col-12 col-md-10 ms-md-3 mt-md-4 img-fluid rounded"
+            />
+          </div>
+          <div class="col-md-11">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-12">
+                  <div class="card-title d-flex justify-content-between">
+                    <div>
+                      <h5>Ankaboot.io</h5>
+                      <span class="badge text-bg-secondary">Junior</span>
+                      <span class="badge text-bg-secondary">Remote</span>
+                      <span class="badge text-bg-secondary">Full-Stack</span>
+                    </div>
+                    <h6 class="pt-2 card-subtitle text-secondary">9 months</h6>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="card-text" style="min-height: 150px">
+                <h6>I worked on two products:</h6>
+                <ul>
+                  <li>
+                    A SaaS developed using Vue and Nuxt on the frontend and
+                    Supabase on the backend.
+                  </li>
+                  <li>
+                    We created another SaaS that uses Quasar and Vue on the
+                    frontend and ExpressJS with Supabase on the backend.
+                  </li>
+                </ul>
+              </div>
+              <div class="row justify-content-between mx-0">
+                <button
+                  class="btn btn-outline-secondary col-5 col-md-4 col-lg-3"
+                  style="font-size: 0.7rem"
+                  disabled
+                >
+                  December 2023
+                </button>
+                <button
+                  class="btn btn-outline-secondary col-5 col-md-4 col-lg-3"
+                  style="font-size: 0.7rem"
+                  disabled
+                >
+                  August 2024
+                </button>
+              </div>
+              <hr />
+              <div class="row flex-row-reverse g-1 g-md-2">
+                <div class="col-3 col-md-2 col-lg-1">
+                  <div class="card">
+                    <img
+                      class="mx-auto"
+                      src="./static/img/vuejs.svg"
+                      alt="languages"
+                      width="40px"
+                    />
+                  </div>
+                </div>
+                <div class="col-3 col-md-2 col-lg-1">
+                  <div class="card">
+                    <img
+                      class="mx-auto"
+                      src="./static/img/typescript.svg"
+                      alt="languages"
+                      width="40px"
+                    />
+                  </div>
+                </div>
+                <div class="col-3 col-md-2 col-lg-1">
+                  <div class="card">
+                    <img
+                      class="mx-auto"
+                      src="./static/img/postgresql.svg"
+                      alt="languages"
+                      width="40px"
+                    />
+                  </div>
+                </div>
+                <div class="col-3 col-md-2 col-lg-1">
+                  <div class="card">
+                    <img
+                      class="mx-auto"
+                      src="./static/img/nodejs.svg"
+                      alt="languages"
+                      width="40px"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card mb-4">
+        <div class="row g-0">
+          <div class="col-md-1">
+            <img
+              src="data:image/jpeg;base64,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"
+              alt="company-logo"
+              class="col-12 col-md-10 ms-md-3 mt-md-4 img-fluid rounded"
+            />
+          </div>
+          <div class="col-md-11">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-12">
+                  <div class="card-title d-flex justify-content-between">
+                    <div>
+                      <h5>RaiseGuard</h5>
+                      <span class="badge text-bg-secondary">Intern</span>
+                      <span class="badge text-bg-secondary">Remote</span>
+                      <span class="badge text-bg-secondary">Full-Stack</span>
+                    </div>
+                    <h6 class="pt-2 card-subtitle text-secondary">2 months</h6>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="card-text" style="min-height: 150px">
+                <ul>
+                  <li>
+                    Create a web application for authentication and permission
+                    that utilizes ExpressJS and NodeJS.
+                  </li>
+                  <li>
+                    Create a web application for admins to manage users and
+                    reports using ExpressJS and NodeJS.
+                  </li>
+                  <li>
+                    Create a web app for users to submit and see reports using
+                    ExpressJS and NodeJS.
+                  </li>
+                </ul>
+              </div>
+              <div class="row justify-content-between mx-0">
+                <button
+                  class="btn btn-outline-secondary col-5 col-md-4 col-lg-3"
+                  style="font-size: 0.7rem"
+                  disabled
+                >
+                  July 2022
+                </button>
+                <button
+                  class="btn btn-outline-secondary col-5 col-md-4 col-lg-3"
+                  style="font-size: 0.7rem"
+                  disabled
+                >
+                  September 2022
+                </button>
+              </div>
+              <hr />
+              <div class="row flex-row-reverse g-1 g-md-2">
+                <div class="col-3 col-md-2 col-lg-1">
+                  <div class="card">
+                    <img
+                      class="mx-auto"
+                      src="./static/img/svelte.svg"
+                      alt="languages"
+                      width="40px"
+                    />
+                  </div>
+                </div>
+                <div class="col-3 col-md-2 col-lg-1">
+                  <div class="card">
+                    <img
+                      class="mx-auto"
+                      src="./static/img/typescript.svg"
+                      alt="languages"
+                      width="40px"
+                    />
+                  </div>
+                </div>
+                <div class="col-3 col-md-2 col-lg-1">
+                  <div class="card">
+                    <img
+                      class="mx-auto"
+                      src="./static/img/mysql.svg"
+                      alt="languages"
+                      width="40px"
+                    />
+                  </div>
+                </div>
+                <div class="col-3 col-md-2 col-lg-1">
+                  <div class="card">
+                    <img
+                      class="mx-auto"
+                      src="./static/img/nodejs.svg"
+                      alt="languages"
+                      width="40px"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card mb-4">
+        <div class="row g-0">
+          <div class="col-md-1">
+            <img
+              src="https://riadhadrani.github.io/slick-portfolio-svelte-5/logos/no-img.svg"
+              alt="company-logo"
+              class="col-12 col-md-10 ms-md-3 mt-md-4 img-fluid rounded"
+            />
+          </div>
+          <div class="col-md-11">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-12">
+                  <div class="card-title d-flex justify-content-between">
+                    <div>
+                      <h5>Freelance</h5>
+                      <span class="badge text-bg-secondary">Remote</span>
+                      <span class="badge text-bg-secondary">Full-Stack</span>
+                    </div>
+                    <h6 class="pt-2 card-subtitle text-secondary">2 months</h6>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="card-text" style="min-height: 150px">
+                <ul>
+                  <li>
+                    Creating a web application for organizing and managing
+                    files, student rankings, and grades.
+                  </li>
+                  <li>Creating a front-end application with JavaFX.</li>
+                  <li>Creating a back-end application with Java and MySQL.</li>
+                </ul>
+              </div>
+              <div class="row justify-content-between mx-0">
+                <button
+                  class="btn btn-outline-secondary col-5 col-md-4 col-lg-3"
+                  style="font-size: 0.7rem"
+                  disabled
+                >
+                  April 2022
+                </button>
+                <button
+                  class="btn btn-outline-secondary col-5 col-md-4 col-lg-3"
+                  style="font-size: 0.7rem"
+                  disabled
+                >
+                  July 2022
+                </button>
+              </div>
+              <hr />
+              <div class="row flex-row-reverse g-1 g-md-2">
+                <div class="col-3 col-md-2 col-lg-1">
+                  <div class="card">
+                    <img
+                      class="mx-auto"
+                      src="./static/img/java.svg"
+                      alt="languages"
+                      width="40px"
+                    />
+                  </div>
+                </div>
+                <div class="col-3 col-md-2 col-lg-1">
+                  <div class="card">
+                    <img
+                      class="mx-auto"
+                      src="./static/img/mysql.svg"
+                      alt="languages"
+                      width="40px"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <script src="./static/js/bootstrap.min.js"></script>
   </body>
 </html>
