@@ -57,7 +57,7 @@
   </head>
 
   <body class="vh-100 d-flex flex-column">
-    <nav class="sticky-top w-100 navbar navbar-expand-md bg-body-tertiary">
+    <nav class="sticky-top navbar navbar-expand-md bg-body-tertiary">
       <div class="container">
         <a href="./" class="navbar-brand">Portfolio</a>
         <button
@@ -71,94 +71,103 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a href="./" class="nav-link active" aria-current="page">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="./projects" class="nav-link" aria-current="page">
-                Projects
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="./showreels" class="nav-link" aria-current="page">
-                Showreels
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="./experiences" class="nav-link" aria-current="page">
-                Experiences
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="./education" class="nav-link" aria-current="page">
-                Education
-              </a>
-            </li>
-          </ul>
-          <a href="./" class="btn btn-primary">Logout</a>
-        </div>
+        <ul class="collapse navbar-collapse navbar-nav" id="navbar-collapse">
+          <li class="nav-item">
+            <a href="./" class="nav-link active" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./projects" class="nav-link" aria-current="page">
+              Projects
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./showreels" class="nav-link" aria-current="page">
+              Showreels
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./experiences" class="nav-link" aria-current="page">
+              Experiences
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./education" class="nav-link" aria-current="page">
+              Education
+            </a>
+          </li>
+        </ul>
       </div>
     </nav>
 
-    <main class="container w-100 flex-fill align-content-center mx-auto px-2">
-      <div class="m-2 m-md-0 row">
-        <div class="col-12 mx-0 col-sm-8 row">
-          <h1 class="col-12 text-decoration-underline">Mohamed Benamor</h1>
+    <main class="container flex-fill align-content-center">
+      <div class="row">
+        <div class="col-sm-8 row m-auto">
+          <h1 class="text-decoration-underline">Mohamed Benamor</h1>
           <span class="typewriter"><p>Programmer, Gamer and Designer</p></span>
-          <p class="col-12">
+          <p>
             I'm an experienced Software Developer and Game Developer. Able to
             effectively self-manage during independent projects, as well as
             collaborate in a team setting.
           </p>
-          <ul class="p-0 col-12 list-group list-group-horizontal">
+          <ul class="list-group list-group-horizontal px-0">
             <li class="list-group-item col-3">
-              <a href="https://github.com/MBATheGamer" target="_blank">
-                <img
-                  class="mx-auto d-block"
-                  src="./static/img/github.svg"
-                  alt="github"
-                  width="40px"
-                />
-              </a>
+              <button
+                type="button"
+                class="btn m-0 p-0 w-100"
+                data-bs-toggle="modal"
+                data-bs-target="#githubModal"
+              >
+                <img src="./static/img/github.svg" alt="github" width="40px" />
+              </button>
             </li>
             <li class="list-group-item col-3">
-              <a href="https://github.com/MBATheGamer" target="_blank">
+              <button
+                type="button"
+                class="btn m-0 p-0 w-100"
+                data-bs-toggle="modal"
+                data-bs-target="#linkedinModal"
+              >
                 <img
-                  class="mx-auto d-block"
                   src="./static/img/linkedin.svg"
                   alt="linkedin"
                   width="40px"
                 />
-              </a>
+              </button>
             </li>
             <li class="list-group-item col-3">
-              <a href="https://github.com/MBATheGamer" target="_blank">
+              <button
+                type="button"
+                class="btn m-0 p-0 w-100"
+                data-bs-toggle="modal"
+                data-bs-target="#whatsappModal"
+              >
                 <img
-                  class="mx-auto d-block"
                   src="./static/img/whatsapp.svg"
                   alt="whatsapp"
                   width="40px"
                 />
-              </a>
+              </button>
             </li>
             <li class="list-group-item col-3">
-              <a href="https://github.com/MBATheGamer" target="_blank">
+              <button
+                type="button"
+                class="btn m-0 p-0 w-100"
+                data-bs-toggle="modal"
+                data-bs-target="#discordModal"
+              >
                 <img
-                  class="mx-auto d-block"
                   src="./static/img/discord.svg"
                   alt="discord"
                   width="40px"
                 />
-              </a>
+              </button>
             </li>
           </ul>
         </div>
-        <div class="col-12 col-sm-1 mb-3 mb-sm-0"></div>
+        <div class="col-sm-1"></div>
         <div
           id="carousel-autoplay"
-          class="carousel slide carousel-fade col-12 col-sm-3 align-content-center"
+          class="carousel slide carousel-fade col-sm-3 align-content-center mt-4 mt-sm-0"
           data-bs-ride="carousel"
         >
           <div class="carousel-inner">
@@ -252,6 +261,194 @@
         </div>
       </div>
     </main>
+
+    <dialog
+      id="githubModal"
+      class="modal fade bg-transparent border-0 justify-content-center align-content-center"
+      tabindex="-1"
+      aria-hidden="true"
+      aria-labelledby="githubModalLabel"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="githubModalLabel">
+              Do you want to visit our Github profile?
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              By clicking on <strong>visit</strong> button, you browser will
+              open new tab, that have our Github page
+            </p>
+          </div>
+          <div class="modal-footer">
+            <a
+              href="https://github.com/MBATheGamer"
+              target="_blank"
+              class="btn btn-primary"
+            >
+              Visit
+            </a>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog
+      id="linkedinModal"
+      class="modal fade bg-transparent border-0 justify-content-center align-content-center"
+      tabindex="-1"
+      aria-hidden="true"
+      aria-labelledby="linkedinModalLabel"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="linkedinModalLabel">
+              Do you want to visit our LinkedIn profile?
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              By clicking on <strong>visit</strong> button, you browser will
+              open new tab, that have our LinkedIn page
+            </p>
+          </div>
+          <div class="modal-footer">
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              class="btn btn-primary"
+            >
+              Visit
+            </a>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog
+      id="whatsappModal"
+      class="modal fade bg-transparent border-0 justify-content-center align-content-center"
+      tabindex="-1"
+      aria-hidden="true"
+      aria-labelledby="whatsappModalLabel"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="whatsappModalLabel">
+              Do you want to visit our Whatsapp contact?
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              By clicking on <strong>visit</strong> button, you browser will
+              open new tab, that have our Whatsapp contact.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <a
+              href="https://whatsapp.com"
+              target="_blank"
+              class="btn btn-primary"
+            >
+              Visit
+            </a>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog
+      id="discordModal"
+      class="modal fade bg-transparent border-0 justify-content-center align-content-center"
+      tabindex="-1"
+      aria-hidden="true"
+      aria-labelledby="discordModalLabel"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="discordModalLabel">
+              Do you want to visit our Discord server?
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              By clicking on <strong>visit</strong> button, you browser will
+              open new tab, that have our Discord server.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <a
+              href="https://discord.com"
+              target="_blank"
+              class="btn btn-primary"
+            >
+              Visit
+            </a>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- <a href="https://github.com/MBATheGamer" target="_blank">
+                
+              </a> -->
     <script src="./static/js/bootstrap.min.js"></script>
   </body>
 </html>
